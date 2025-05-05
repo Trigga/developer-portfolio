@@ -1,8 +1,7 @@
 // import {Chrono} from "react-chrono";
 import timelineContent from "@/ressources/timelineContent";
-import {Button} from "@/components/ui/button";
-import {router} from "next/client";
 import dynamic from "next/dynamic";
+import Header from "@/components/Header";
 
 
 export default function Curriculum() {
@@ -22,7 +21,8 @@ export default function Curriculum() {
 
     return (
         <>
-            <Button onClick={() => router.push("/")}>Back</Button>
+            <Header/>
+
             <div>
             <Chrono style={{ width: "100vw", height: "100vh" }}
                     items={timelineContent}

@@ -2,6 +2,7 @@ import navigationButtonContent from "@/ressources/navigationButtonContent";
 import welcomeSectionContent from "@/ressources/welcomeSectionContent";
 import HomeNavigation from "@/components/HomeNavigation";
 import WelcomeSection from "@/components/WelcomeSection";
+import Header from "@/components/Header";
 
 export default function Home () {
 
@@ -12,6 +13,8 @@ export default function Home () {
 
 
     return (
+        <>
+        <Header/>
         <div className="min-h-screen bg-slate-600">
             <div className="container mx-auto px-4 pt-20 flex flex-col items-center">
                 <WelcomeSection name={welcomeSectionContent.name} textContent={welcomeSectionContent.textContent}/>
@@ -20,6 +23,7 @@ export default function Home () {
                 </div>
             </div>
         </div>
+        </>
     )
 
 }
