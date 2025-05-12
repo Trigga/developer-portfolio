@@ -13,8 +13,8 @@ export default function Header() {
     );
 
     return (
-        <div className="w-full pb-4 mb-6">
-            <div className="flex items-center w-full px-6 py-12 relative min-h-[20px]">
+        <div className="w-full">
+            <div className="flex items-center w-full h-10">
                 <div className="absolute left-1/2 -translate-x-1/2 text-2xl font-medium">
                     {currentPage ? <div>{currentPage.content}</div> : <div>Home</div>}
                 </div>
