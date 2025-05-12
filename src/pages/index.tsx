@@ -14,15 +14,16 @@ export default function Home () {
 
     return (
         <>
-        <Header/>
-        <div className="min-h-screen bg-slate-600">
-            <div className="container mx-auto px-4 pt-20 flex flex-col items-center">
-                <WelcomeSection name={welcomeSectionContent.name} textContent={welcomeSectionContent.textContent}/>
-                <div className="flex flex-col gap-4 sm:gap-6 md:gap-8">
-                    {buttonElement}
-                </div>
-            </div>
-        </div>
+            <main className="min-h-screen">
+                <Header/>
+                    <div className="container mx-auto px-4 pt-20 flex flex-col items-center">
+                        <WelcomeSection name={welcomeSectionContent.name} textContent={welcomeSectionContent.textContent}/>
+                        <div className="flex flex-col gap-4 sm:gap-6 md:gap-8">
+                            {buttonElement}
+                        </div>
+                    </div>
+            </main>
+
         </>
     )
 
